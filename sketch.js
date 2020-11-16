@@ -20,6 +20,7 @@ function setup() {
 }
 
 function draw() {
+  Engine.update(engine);
   background("black"); 
 
   base.display();
@@ -75,7 +76,7 @@ function plinko()
 
 function balls()
 {
-  if(frameCount%10 === 0)
+  if(frameCount%60 === 0)
   {
     particles.push(new Ball(random(230, 250), 10, 10))
   }

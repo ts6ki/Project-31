@@ -18,10 +18,10 @@ class Ball {
     
       push()
       translate(pos.x, pos.y);
-      ellipseMode(CENTER);
+      ellipseMode(RADIUS);
       noStroke();
       fill(this.color);
-      ellipse(0, 0, 10);
+      ellipse(0, 0, this.radius, this.radius);
       pop()
       
     }
